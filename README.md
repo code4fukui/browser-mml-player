@@ -13,7 +13,8 @@ npm start
 
 ## Try this in browser
 
-Open this link: https://t-sin.github.io/browser-mml-player/
+- Open this link: https://t-sin.github.io/browser-mml-player/
+- Xmas demo: https://code4fukui.github.io/browser-mml-player/player.html
 
 ## Author
 
