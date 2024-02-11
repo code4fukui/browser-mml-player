@@ -9,14 +9,210 @@
   </head>
   <body>
     <h1>MML Player</h1>
-    <textarea id="mmlcode" rows=15 cols=80>@volume=0.7 c5:64 r:64 r:32 r:16 @volume=0.2 =:64 r:64 r:32 r:16
-@volume=0.7 d5:64 r:64 r:32 r:16 @volume=0.2 =:64 r:64 r:32 r:16
-@volume=0.7 e5:64 r:64 r:32 r:16 @volume=0.2 =:64 r:64 r:32 r:16
-@volume=0.7 f5:64 r:64 r:32 r:16 @volume=0.2 =:64 r:64 r:32 r:16
-@volume=0.7 g5:64 r:64 r:32 r:16 @volume=0.2 =:64 r:64 r:32 r:16
-@volume=0.7 a5:64 r:64 r:32 r:16 @volume=0.2 =:64 r:64 r:32 r:16
-@volume=0.7 b5:64 r:64 r:32 r:16 @volume=0.2 =:64 r:64 r:32 r:16
-@volume=0.7 c6:64 r:64 r:32 r:16 @volume=0.2 =:64 r:64 r:32 r:16
+    <textarea id="mmlcode" rows=15 cols=80>@sys.bpm=100
+
+@volume=0.3
+f5:4 @volume=0.1 =:8 @volume=0.3 g5:8 f5:4 d5:2 d5:8 @volume=0.1 =:16 @volume=0.3 r:16 
+f5:4 @volume=0.1 =:8 @volume=0.3 g5:8 f5:4 d5:2 d5:8 @volume=0.1 =:16 @volume=0.3 r:16 
+
+c6:4 =:8 @volume=0.1 =:16 =:32 r:32 @volume=0.3
+c6:4 a5:4 =:8 @volume=0.1 =:8 r:4 @volume=0.3
+a5+:4 =:8 @volume=0.1 =:16 =:32 r:32 @volume=0.3
+a5+:4 f5:4 =:8 @volume=0.1 =:8 r:4 @volume=0.3
+
+g5:4 @volume=0.1 =:8 r:8 @volume=0.3 =:4 a5+:4 @volume=0.1 =:8 @volume=0.3 a5:8 g5:8 @volume=0.1 =:8 @volume=0.3
+f5:4 @volume=0.1 =:8 @volume=0.3 g5:8 f5:4 d5:2 d5:8 @volume=0.1 =:16 @volume=0.3 r:16 
+g5:4 @volume=0.1 =:8 r:8 @volume=0.3 =:4 a5+:4 @volume=0.1 =:8 @volume=0.3 a5:8 g5:8 @volume=0.1 =:8 @volume=0.3
+f5:4 @volume=0.1 =:8 @volume=0.3 g5:8 f5:4 d5:2 d5:8 @volume=0.1 =:16 @volume=0.3 r:16 
+
+c6:4 @volume=0.1 =:8 r:8 @volume=0.3 =:4 d6+:4 @volume=0.1 =:8 @volume=0.3 c6:8 a5:8 @volume=0.1 =:8 @volume=0.3
+a5+:4 @volume=0.2 =:4 @volume=0.1 =:4 @volume=0.3 d6:4 @volume=0.2 =:4 @volume=0.1 =:4 @volume=0.3
+
+a5+:8 @volume=0.1 =:8 @volume=0.3 f5:8 @volume=0.1 =:8 @volume=0.3 d5:8 @volume=0.1 =:8 @volume=0.3
+f5:4 @volume=0.1 =:8 @volume=0.3 d5+:8 c5:8 @volume=0.1 =:8
+@volume=0.3 a4+:2 @volume=0.2 =:4 @volume=0.1 =:4 
+
+---
+
+@volume=0.3
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+d2+:32 r:32 r:16 r:8 d2+:32 r:32 r:16 r:8 r:8 c2:32 r:32 r:16
+f2:32 r:32 r:16 r:8 f2:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2-:32 r:32 r:16 r:8 a2-:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+
+d2+:32 r:32 r:16 r:8 d2+:32 r:32 r:16 r:8 r:8 a1+:32 r:32 r:16
+d2+:32 r:32 r:16 r:8 d2+:32 r:32 r:16 r:8 r:8 a1+:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+d2+:32 r:32 r:16 r:8 d2+:32 r:32 r:16 r:8 r:8 a1+:32 r:32 r:16
+d2+:32 r:32 r:16 r:8 d2+:32 r:32 r:16 r:8 r:8 a1+:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+
+d2+:32 r:32 r:16 r:8 d2+:32 r:32 r:16 r:8 r:8 c2:32 r:32 r:16
+f2:32 r:32 r:16 r:8 f2:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2-:32 r:32 r:16 r:8 a2-:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+f2:32 r:32 r:16 r:8 f2:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 r:32 r:16 r:8 r:8 f2:32 r:32 r:16
+a2+:32 r:32 r:16 r:8 a2+:32 
+
+---
+
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 g6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d7+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 g6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 c7:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d7+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 c7:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6-:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+
+@pan=0.2 @volume=0.2 f5:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 g6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 g6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f5:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 g6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 g6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+
+@pan=0.2 @volume=0.2 f5:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 g6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 g6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f5:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 g6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 g6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 c7:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 c7:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d7+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 c7:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6-:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 c6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 c6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a6+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 f6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 d6:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a4+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
+@pan=0.2 @volume=0.2 a5+:128 r:128 r:64 r:32 @pan=-0.1 @volume=0.05 =:128 r:128 r:64 r:32
 </textarea><br>
     <button id="mmlplay">play</button>
     <button id="mmlstop">stop</button>
