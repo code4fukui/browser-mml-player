@@ -14,7 +14,7 @@ npm start
 ## Try this in browser
 
 - Open this link: https://t-sin.github.io/browser-mml-player/
-- Xmas demo: https://code4fukui.github.io/browser-mml-player/player.html
+- Xmas demo: https://code4fukui.github.io/browser-mml-player/player.html from [the article](https://www.ubsecure.jp/blog/20201224)
 
 ## Author
 
