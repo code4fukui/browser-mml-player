@@ -1,3 +1,8 @@
 node_modules
 dist
 .cache
+
+# auto-added by meta-ops
+node_modules/
+.DS_Store
+Thumbs.db
